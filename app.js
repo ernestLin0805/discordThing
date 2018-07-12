@@ -9,7 +9,7 @@ client.on('ready',() => {
 })
 
 client.on('reconnecting', () => {
-  message.channel.send('I\'m back! ${new Date()}');
+  message.channel.send('I\'m back!');
 })
 
 client.on('guildMemberAdd', member => {
