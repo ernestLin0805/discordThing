@@ -1,6 +1,6 @@
 {
-  "name": "discordbot1",
-  "version": "0.0.1",
+  "name": "discordbot2",
+  "version": "1.1.5",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Ernest",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.1",
     "discord.js": "^11.3.2",
     "return-deep-diff": "^0.3.0"
   }

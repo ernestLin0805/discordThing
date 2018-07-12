@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const chalk = require('chalk');
 const token = require('./settings.json').token;
 var prefix = "/"
 
@@ -13,7 +14,7 @@ client.on('reconnecting', () => {
 
 client.on('guildMemberAdd', member => {
   let guild = member.guild;
-  guild.defaultChannel.sendMessage('${member.user.username}, welcome to Wood Division, where it\'s ok to suck because we all suck!')
+  guild.defaultChannel.sendMessage(chalk.bgBlue('${member.user.username}, welcome to Wood Division, where it\'s ok to suck because we all suck!'));
 })
 
 client.on('guildBanAdd', (guild, user) => {
@@ -33,7 +34,7 @@ client.on('message', message => {
       message.reply('pong!');
   }
   else if (message.content === 'Introduce yourself Ghoulbot') {
-    message.channel.send('Greetings. I am Ghoulbot1, an Artificial Intelligence created by Harvard University.')
+    message.channel.send(chalk.bgRed('Greetings. I am Ghoulbot1, an Artificial Intelligence created by Harvard University.'));
     message.channel.send({files: ["https://www.diarystore.com/sites/default/files/featureimage-education/harvard_university_1-min.jpg"]})
     message.channel.send(' What are your commands.')
   }
