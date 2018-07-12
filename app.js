@@ -7,6 +7,8 @@ client.on('ready',() => {
   console.log('I\'m online');
 })
 
+
+
 client.on('guildMemberAdd', member => {
   let guild = member.guild;
   guild.defaultChannel.sendMessage('${member.user.username}, welcome to Wood Division, where it\'s ok to suck because we all suck!')
