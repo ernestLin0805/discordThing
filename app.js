@@ -1,16 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const chalk = require('chalk');
 const token = require('./settings.json').token;
 var prefix = "/"
 
-client.on('ready',() => {
+client.on('ready', () => {
   console.log('I\'m online');
 })
 
-client.on('reconnecting', () => {
-  message.channel.send('I\'m back!');
-})
 
 client.on('guildMemberAdd', member => {
   let guild = member.guild;
@@ -57,4 +53,4 @@ client.on('message', message => {
   }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("NDY2NzU4NTY5MzU4OTE3NjYz.DiklgA.oVaBR-O29LDyPH0xpbCcJTcNpe0");
