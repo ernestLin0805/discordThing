@@ -7,7 +7,9 @@ client.on('ready',() => {
   console.log('I\'m online');
 })
 
-
+client.on('reconnecting', () => {
+  message.channel.send('I\'m back! ${new Date()}');
+})
 
 client.on('guildMemberAdd', member => {
   let guild = member.guild;
