@@ -1,0 +1,15 @@
+{
+  "name": "discordbot1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ernest",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "return-deep-diff": "^0.3.0"
+  }
+}
